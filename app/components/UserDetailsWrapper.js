@@ -13,4 +13,4 @@ UserDetailsWrapper.propTypes = {
   header: PropTypes.string
 };
 
-module.exports = UserDetails`Wrapper;
+module.exports = UserDetailsWrapper;
