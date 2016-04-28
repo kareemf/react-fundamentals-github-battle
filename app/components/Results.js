@@ -5,6 +5,7 @@ var Link = ReactRouter.Link;
 
 var styles = require('../styles/index');
 
+var Loading = require('./Loading');
 var MainJumbotron = require('./MainJumbotron');
 var UserDetails = require('./UserDetails');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
@@ -41,7 +42,7 @@ function Results(props) {
   });
 
   return (
-    props.isLoading ? <p>LOADING</p> :
+    props.isLoading ? <Loading /> :
     <MainJumbotron>
       <h1>Results</h1>
       <div className='col-sm-8 col-sm-offset-2'>
